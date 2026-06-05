@@ -5,21 +5,21 @@
 class Bk < Formula
   desc "Operations layer for beads (bd) — single-binary Go rewrite of beadkeeper."
   homepage "https://github.com/theaichimera/beekeeper-go"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.5.0/beekeeper-go_0.5.0_darwin_x86_64.tar.gz"
-      sha256 "14316f68da6386b716f342975dab9f772c2a52698048ed4dbc665ddf73b1d936"
+      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.6.0/beekeeper-go_0.6.0_darwin_x86_64.tar.gz"
+      sha256 "33f82a82246531b2d4e4e3c5a3432c5ebaf53ca0b390ad8cfd82316cfcec8688"
 
       define_method(:install) do
         bin.install "bk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.5.0/beekeeper-go_0.5.0_darwin_arm64.tar.gz"
-      sha256 "9d84f060a6cfbf3a920f2fb6d59840027c9f5de6b664d5bd2adde88ffe0ed3a4"
+      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.6.0/beekeeper-go_0.6.0_darwin_arm64.tar.gz"
+      sha256 "8a1ad6892b91ff410b05efbfbbc196c5540f2bac569c337e1bbf26e21743aa72"
 
       define_method(:install) do
         bin.install "bk"
@@ -29,15 +29,15 @@ class Bk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.5.0/beekeeper-go_0.5.0_linux_x86_64.tar.gz"
-      sha256 "a3ba71417578d2c657817902c52a286264f17b6c0397c676d6fc1b0cdb1e02a6"
+      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.6.0/beekeeper-go_0.6.0_linux_x86_64.tar.gz"
+      sha256 "a98dd6561afd4fd414b64dbd631c7227b8271f6cd5beffaa206281245cd9147b"
       define_method(:install) do
         bin.install "bk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.5.0/beekeeper-go_0.5.0_linux_arm64.tar.gz"
-      sha256 "aa49598839a064c834ace43eb2f7cef49266fc56f7f30622ec59aa2843dce4cc"
+      url "https://github.com/theaichimera/beekeeper-go/releases/download/v0.6.0/beekeeper-go_0.6.0_linux_arm64.tar.gz"
+      sha256 "d6a92546087ec331174c2ea00f4878b51a2285dde0e8a62cf476e3f71f0a3441"
       define_method(:install) do
         bin.install "bk"
       end
